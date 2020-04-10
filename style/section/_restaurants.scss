@@ -1,0 +1,148 @@
+.restaurants {
+    padding-bottom: 60px;
+
+    &__heading {
+        margin-bottom: 44px;
+        display: flex;
+        align-items: center;
+        &-title {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42px;
+            color: #000000;
+            margin-right: 30px;
+        }
+        &-input {
+            background-image: url(../img/search.svg);
+            width: 306px;
+            margin-left: auto;
+        }
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__card {
+        flex-basis: 32%;
+        margin-bottom: 30px;
+        background: #ffffff;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        text-decoration: none;
+        border-radius: 7px 7px 0px 0px;
+        &-img {
+            width: 100%;
+        }
+        &-info {
+            padding: 20px 23px 34px 24px;
+            &-title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                &-text {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: #000000;
+                }
+                &-time {
+                    background: #262626;
+                    border-radius: 2px;
+                    padding: 1px 8px;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #ffffff;
+                }
+            }
+            &-description {
+                display: flex;
+                align-items: center;
+                &-rating {
+                    margin-right: 26px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #ffc107;
+                }
+                &-rating:before {
+                    content: "";
+                    display: inline-block;
+                    margin-right: 7px;
+                    width: 15px;
+                    height: 15px;
+                    background-image: url(../img/star.svg);
+                }
+                &-price {
+                    margin-right: 10px;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #8c8c8c;
+                }
+                &-price:after {
+                    content: "";
+                    background-color: #8c8c8c;
+                    width: 5px;
+                    height: 5px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                    vertical-align: middle;
+                }
+                &-category {
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #8c8c8c;
+                }
+            }
+            &-food {
+                margin-bottom: 25px;
+                &-footer {
+                    display: flex;
+                    align-items: center;
+                }
+                &-title {
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-bottom: 10px;
+                }
+                &-ingredients {
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #8c8c8c;
+                    overflow: hidden;
+                    text-overflow: ellipse;
+                    
+                    
+                }
+                &-btn {
+                    padding: 8px 16px;
+                    background: #1890ff;
+                    border: none;
+                    border-radius: 2px;
+                    color: #ffffff;
+                    outline: none;
+                    font-size: 16px;
+                    line-height: 24px;
+                    display: flex;
+                    align-self: center;
+                    margin-right: 32px;
+                    &-img {
+                        margin-left: 4px;
+                    }
+                }
+                &-price {
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    &__card:visited {
+        color: #000000;
+    }
+}
